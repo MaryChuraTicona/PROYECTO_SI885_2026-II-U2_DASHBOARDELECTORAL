@@ -1,5 +1,6 @@
 import csv
 import os
+import re
 from pathlib import Path
 
 import pyodbc
@@ -63,6 +64,8 @@ def normalize_value(value):
         return 1
     if stripped.lower() == "false":
         return 0
+    if re.fullmatch(r"-?\d+\.0", stripped):
+        return int(float(stripped))
     return stripped
 
 
@@ -82,7 +85,10 @@ def load_table(cursor: pyodbc.Cursor, table_name: str, csv_path: Path) -> int:
     placeholders = ", ".join("?" for _ in columns)
     insert_sql = f"INSERT INTO dbo.[{table_name}] ({column_sql}) VALUES ({placeholders})"
 
-    cursor.fast_executemany = True
+    # Keep this disabled for GitHub-hosted Windows runners. With mixed-width
+    # text columns, pyodbc can infer an undersized buffer and fail with
+    # "String data, right truncation" before SQL Server receives the rows.
+    cursor.fast_executemany = False
     cursor.executemany(insert_sql, rows)
     return len(rows)
 
