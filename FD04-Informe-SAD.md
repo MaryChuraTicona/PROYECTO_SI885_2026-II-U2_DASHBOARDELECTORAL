@@ -1,4 +1,4 @@
-<center>
+﻿<center>
 
 [comment]: <img src="./media/media/image1.png" style="width:1.088in;height:1.46256in" alt="escudo.png" />
 
@@ -10,7 +10,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *“Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2021” ***
+**Proyecto *“Dashboard de análisis electoral y evaluación de perfil de candidatos presidenciales - Perú 2026” ***
 
 Curso: *Inteligencia de Negocios *
 
@@ -34,7 +34,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 
@@ -47,11 +47,11 @@ Integrantes:
 
 
 
-**Sistema *{Nombre del Sistema}***
+**Sistema *Dashboard de analisis electoral de candidatos presidenciales - Peru 2026***
 
-**Documento de Visión**
+**Documento de Arquitectura de Software (SAD)**
 
-**Versión *{1.0}***
+**Versión *1.0***
 **
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
@@ -59,7 +59,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
@@ -121,8 +121,8 @@ Integrantes:
 
 ## **1.1 Propósito (Modelo 4+1)**
 
-El propósito del presente documento es describir la arquitectura del sistema Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2021, utilizando el modelo de vistas arquitectónicas 4+1. Este enfoque permite representar el sistema desde diferentes perspectivas, considerando la vista de casos de uso, vista lógica, vista de implementación, vista de procesos y vista de despliegue.
-La arquitectura propuesta tiene como finalidad organizar los componentes principales del sistema, definir la relación entre sus módulos y establecer una base técnica que permita su desarrollo e implementación mediante herramientas de inteligencia de negocios como Power BI. El sistema está orientado a centralizar información electoral, visualizar resultados, comparar candidatos, analizar propuestas de gobierno y generar reportes visuales.
+El propósito del presente documento es describir la arquitectura del sistema Dashboard de análisis electoral y evaluación de perfil de candidatos presidenciales – Perú 2026, utilizando el modelo de vistas arquitectónicas 4+1. Este enfoque permite representar el sistema desde diferentes perspectivas, considerando la vista de casos de uso, vista lógica, vista de implementación, vista de procesos y vista de despliegue.
+La arquitectura propuesta tiene como finalidad organizar los componentes principales del sistema, definir la relación entre sus módulos y establecer una base técnica que permita su desarrollo e implementación mediante herramientas de inteligencia de negocios como Power BI. El sistema está orientado a centralizar información electoral, visualizar resultados, comparar candidatos, analizar ingresos, patrimonio, riesgo legal, TikTok, campaña y generar reportes visuales.
 
 
 ---
@@ -137,7 +137,7 @@ El alcance considera los siguientes elementos:
 - 	Vista de procesos mediante diagramas de actividad.
 - 	Vista de despliegue físico del sistema.
 Atributos de calidad como funcionalidad, usabilidad, confiabilidad, rendimiento y mantenibilidad.
-El sistema será desarrollado con fines académicos y estará orientado al análisis de datos electorales de las Elecciones Generales Perú 2021, sin integración en tiempo real con sistemas oficiales ni manejo de datos sensibles. 
+El sistema será desarrollado con fines académicos y estará orientado al análisis de del perfil de candidatos de las Elecciones Generales Perú 2026 almacenados en Azure SQL, sin integración en tiempo real con sistemas oficiales ni manejo de datos sensibles. 
 
 
 ---
@@ -178,12 +178,12 @@ El presente documento se encuentra organizado de la siguiente manera:
 |------|------------|----------|
 | RF01 | Visualizar resultados | Alta |
 | RF02 | Filtrar datos | Alta |
-| RF03 | Consultar planes | Alta |
-| RF04 | Clasificar propuestas | Alta |
+| RF03 | Consultar perfil socioeconómico | Alta |
+| RF04 | Clasificar por nivel de riesgo legal | Alta |
 | RF05 | Comparar candidatos | Alta |
 | RF06 | Generar indicadores | Alta |
 | RF07 | Interacción dashboard | Alta |
-| RF08 | Evaluar propuestas | Media |
+| RF08 | Analizar TikTok y campaña | Media |
 | RF09 | Generar reportes | Media |
 
 ---
@@ -219,9 +219,9 @@ El presente documento se encuentra organizado de la siguiente manera:
 3.2.	Vista Lógica
 La vista lógica representa la estructura interna del sistema, enfocándose en los elementos que permiten cumplir con los requerimientos funcionales. Esta vista incluye la organización en paquetes, clases, objetos y la interacción entre ellos.
 El sistema se organiza en módulos principales como:
-- Gestión de datos (resultados electorales y planes de gobierno)
+- Gestión de datos (resultados electorales y perfil de candidatos presidenciales)
 - 	Análisis electoral
-- 	Evaluación de propuestas
+- 	Evaluación de riesgo legal y perfil digital
 - 	Visualización (dashboard)
 -	Generación de reportes
 Estos módulos permiten estructurar el sistema de manera clara, facilitando su desarrollo, mantenimiento y escalabilidad.
@@ -261,12 +261,12 @@ Estos módulos permiten estructurar el sistema de manera clara, facilitando su d
 
 ## **3.3 Vista de Implementación**
 
-La vista de implementación describe cómo se organiza el sistema a nivel de componentes de software, módulos y herramientas tecnológicas utilizadas para construir el dashboard. En este proyecto, la arquitectura se basa en un flujo de datos donde la información electoral y los planes de gobierno son recopilados, limpiados, estructurados y posteriormente visualizados mediante Power BI.
+La vista de implementación describe cómo se organiza el sistema a nivel de componentes de software, módulos y herramientas tecnológicas utilizadas para construir el dashboard. En este proyecto, la arquitectura se basa en un flujo de datos donde la información electoral y los perfil de candidatos presidenciales son recopilados, limpiados, estructurados y posteriormente visualizados mediante Power BI.
 El sistema no contempla una aplicación web compleja con backend transaccional, sino una arquitectura orientada a inteligencia de negocios, donde los datos son procesados y transformados para alimentar visualizaciones interactivas.
 
 ### **3.3.1 Diagrama de  arquitectira  software (paquetes)** 
 
-El diagrama de arquitectura software organiza el sistema en cuatro capas principales. La capa de datos contiene los datasets electorales, planes de gobierno y fuentes oficiales. La capa de procesamiento se encarga de limpiar, transformar y clasificar la información. La capa de análisis genera indicadores electorales, métricas de comparación y evaluación de propuestas. Finalmente, la capa de visualización presenta la información mediante dashboards interactivos, gráficos y reportes visuales en Power BI.
+El diagrama de arquitectura software organiza el sistema en cuatro capas principales. La capa de datos contiene los datasets electorales, perfil de candidatos presidenciales y fuentes oficiales. La capa de procesamiento se encarga de limpiar, transformar y clasificar la información. La capa de análisis genera indicadores DAX: KPIs de perfil, porcentaje de género, riesgo legal, TikTok y campaña. Finalmente, la capa de visualización presenta la información mediante dashboards interactivos, gráficos y reportes visuales en Power BI.
 
 <p align="center">
   <img src="./media/paquetessoft.png" width="500"/>
@@ -277,7 +277,7 @@ El diagrama de arquitectura software organiza el sistema en cuatro capas princip
 ### **3.3.1 Diagrama de  arquitectira  software (componenetes)**
 El diagrama de componentes representa la arquitectura del sistema a nivel de implementación, mostrando los elementos principales que intervienen en el funcionamiento del dashboard. El usuario interactúa directamente con el componente Power BI Dashboard, el cual permite visualizar la información mediante gráficos interactivos y reportes.
 El dashboard se conecta con el Modelo de Datos, donde se estructuran los datos previamente procesados. Este modelo es alimentado por el componente Procesamiento ETL, encargado de la extracción, transformación y carga de datos provenientes de diferentes fuentes.
-Las principales fuentes de datos incluyen información electoral de la ONPE, planes de gobierno de los candidatos y archivos estructurados como Excel o CSV. Esta arquitectura permite integrar múltiples fuentes, procesarlas y presentarlas de forma clara y organizada en el dashboard.
+Las principales fuentes de datos incluyen información electoral de la ONPE, perfil de candidatos presidenciales de los candidatos y archivos estructurados como Excel o CSV. Esta arquitectura permite integrar múltiples fuentes, procesarlas y presentarlas de forma clara y organizada en el dashboard.
 
 <p align="center">
   <img src="./media/componenetes.png" width="500"/>
@@ -309,12 +309,12 @@ El usuario puede aplicar filtros para segmentar la información, lo que genera u
 
 ## **3.5 Vista de Despliegue**
 
-La vista de despliegue representa la distribución física del sistema y muestra los nodos donde se ejecutan sus componentes. En el caso del Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2021, el sistema se despliega en un entorno web, permitiendo que el usuario acceda al dashboard desde un navegador mediante conexión a internet.
+La vista de despliegue representa la distribución física del sistema y muestra los nodos donde se ejecutan sus componentes. En el caso del Dashboard de análisis electoral y evaluación de perfil de candidatos presidenciales – Perú 2026, el sistema se despliega en un entorno web, permitiendo que el usuario acceda al dashboard desde un navegador mediante conexión a internet.
 El sistema utiliza fuentes de datos estructuradas, procesamiento de información y visualización mediante Power BI, por lo que su despliegue se apoya en equipos de desarrollo, almacenamiento de datos y un servicio web o cloud para publicación del dashboard.
 
 ### **3.5.1.	Diagrama de despliegue**
 
-El diagrama de despliegue muestra la distribución física del sistema. El equipo de desarrollo utiliza Power BI Desktop, archivos Excel/CSV y herramientas de limpieza de datos como Python o Excel para preparar la información electoral y los planes de gobierno. Estos datos son organizados en un repositorio de datos compuesto por el dataset electoral y la información de planes de gobierno.
+El diagrama de despliegue muestra la distribución física del sistema. El equipo de desarrollo utiliza Power BI Desktop, Power Query y Azure SQL connector para preparar la información electoral y los perfil de candidatos presidenciales. Estos datos son organizados en un repositorio de datos compuesto por el base de datos Azure SQL con tablas de perfil de candidatos presidenciales.
 Posteriormente, el dashboard es construido en Power BI Desktop y publicado en un servicio web o entorno cloud, como Power BI Service. Finalmente, el usuario final accede al dashboard publicado desde un navegador web con conexión a internet, visualizando reportes e indicadores interactivos.
 
 <p align="center">
@@ -329,7 +329,7 @@ Posteriormente, el dashboard es construido en Power BI Desktop y publicado en un
 
 ##  **4.1.	Escenario de Funcionalidad**
 
-La funcionalidad del sistema se evalúa en base a las capacidades que ofrece el dashboard para cumplir con los requerimientos definidos. El sistema permite visualizar resultados electorales, filtrar información, consultar planes de gobierno, comparar candidatos, generar indicadores y elaborar reportes visuales. Estas funciones garantizan que el sistema cumpla con su propósito principal de facilitar el análisis de información electoral.
+La funcionalidad del sistema se evalúa en base a las capacidades que ofrece el dashboard para cumplir con los requerimientos definidos. El sistema permite visualizar resultados electorales, filtrar información, consultar perfil de candidatos presidenciales, comparar candidatos, generar indicadores y elaborar reportes visuales. Estas funciones garantizan que el sistema cumpla con su propósito principal de facilitar el análisis de información electoral.
 Desde el punto de vista de calidad, la funcionalidad está relacionada con la correcta ejecución de las operaciones del sistema, asegurando que los datos sean procesados y representados adecuadamente. Asimismo, se garantiza la integridad de la información, ya que los datos provienen de fuentes oficiales y no son modificados por el usuario final.
 ---
 ## **4.2.	Escenario de Usabilidad (RNF01)**

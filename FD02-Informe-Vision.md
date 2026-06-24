@@ -1,4 +1,4 @@
-<center>
+﻿<center>
 
 [comment]: <img src="./media/media/image1.png" style="width:1.088in;height:1.46256in" alt="escudo.png" />
 
@@ -10,7 +10,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *“Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2021” ***
+**Proyecto *”Dashboard de análisis electoral de candidatos presidenciales - Perú 2026”***
 
 Curso: *Inteligencia de Negocios *
 
@@ -34,7 +34,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 
@@ -47,7 +47,7 @@ Integrantes:
 
 
 
-**Sistema *{Nombre del Sistema}***
+**Sistema *Dashboard de análisis electoral de candidatos presidenciales – Perú 2026***
 
 **Documento de Visión**
 
@@ -59,7 +59,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
@@ -153,12 +153,12 @@ A lo largo de este documento se describen los objetivos, alcance, usuarios, cara
 
 ### 1.1 Propósito
 
-El propósito de este documento es definir una visión clara y estructurada del sistema “Dashboard de análisis de candidatos presidenciales y evaluación de planes de gobierno-Perú 2026”, estableciendo sus objetivos, funcionalidades, alcance y beneficios esperados.
+El propósito de este documento es definir una visión clara y estructurada del sistema “Dashboard de análisis electoral de candidatos presidenciales – Perú 2026”, estableciendo sus objetivos, funcionalidades, alcance y beneficios esperados.
 Asimismo, busca servir como guía para el desarrollo del sistema, permitiendo que todos los involucrados tengan una comprensión común del proyecto y sus alcances.
 
 ### 1.2 Alcance
 
-El sistema contempla el desarrollo de un dashboard interactivo que permitirá a los usuarios analizar el perfil de los candidatos presidenciales y comparar sus planes de gobierno.
+El sistema contempla el desarrollo de un dashboard interactivo que permitirá a los usuarios analizar el perfil de los candidatos presidenciales y analizar su perfil socioeconómico, legal y de campaña.
 El sistema incluirá funcionalidades como:
 
 	Visualización del perfil de candidatos (datos personales, características socioeconómicas y trayectoria)
@@ -184,7 +184,7 @@ El presente documento se basa en el informe de factibilidad desarrollado previam
 ### 1.5 Visión General
 
 El sistema propuesto es una herramienta digital orientada a mejorar el acceso y comprensión de la información política en el Perú.
-Su finalidad es proporcionar una plataforma que permita analizar el perfil de los candidatos presidenciales y comparar sus planes de gobierno de manera clara, estructurada y visual.
+Su finalidad es proporcionar una plataforma que permita analizar el perfil de los candidatos presidenciales y analizar su perfil socioeconómico, legal y de campaña de manera clara, estructurada y visual.
 A través de esta solución, se busca transformar información compleja en conocimiento accesible, facilitando el análisis de propuestas políticas, promoviendo la transparencia y contribuyendo a una toma de decisiones informada.
 
 
@@ -195,7 +195,7 @@ A través de esta solución, se busca transformar información compleja en conoc
 
 ### 2.1 Oportunidad de negocio
 
-El crecimiento del uso de herramientas digitales y plataformas de análisis de datos representa una oportunidad significativa para el desarrollo de soluciones orientadas al análisis político. En el Perú, los planes de gobierno contienen información valiosa, pero no siempre se presentan de forma clara, integrada y fácil de comparar.
+El crecimiento del uso de herramientas digitales y plataformas de análisis de datos representa una oportunidad significativa para el desarrollo de soluciones orientadas al análisis político. En el Perú, los datos públicos de los candidatos contienen información valiosa, pero no siempre se presentan de forma clara, integrada y fácil de analizar.
 En este contexto, existe una oportunidad para desarrollar un dashboard que permita centralizar, organizar y visualizar las propuestas de los candidatos, facilitando su análisis comparativo.
 Asimismo, el proyecto se alinea con la creciente demanda de herramientas de Business Intelligence (BI), que permiten transformar datos en información útil para la toma de decisiones. Esto no solo aporta valor académico, sino que también tiene potencial aplicación en ámbitos educativos, institucionales y de análisis político.
 
@@ -255,7 +255,7 @@ Las principales necesidades identificadas son:
 
 - Acceso a información electoral organizada y confiable  
 - Visualización clara de resultados y propuestas  
-- Comparación de candidatos por sectores (salud, educación, economía, etc.)  
+- Comparación de candidatos por ingresos, patrimonio y nivel de riesgo legal  
 - Herramientas interactivas para análisis de datos  
 - Facilidad de uso sin requerir conocimientos técnicos avanzados  
 - Acceso desde cualquier dispositivo con conexión a internet  
@@ -273,16 +273,16 @@ El sistema Dashboard de análisis electoral se presenta como una solución tecno
 
 El producto no reemplaza sistemas existentes, sino que complementa la información disponible en fuentes oficiales, integrándola en un entorno visual interactivo que facilita su comprensión.
 
-El sistema permitirá centralizar datos electorales y planes de gobierno, transformándolos en gráficos, indicadores y reportes que apoyan el análisis y la toma de decisiones.
+El sistema permitirá centralizar datos del perfil de candidatos (ingresos, patrimonio, riesgo legal, campaña y presencia digital), transformándolos en gráficos, indicadores y reportes que apoyan el análisis y la toma de decisiones.
 
 ### 4.2 Resumen de capacidades
 
 El sistema contará con las siguientes capacidades principales:
 
 - Visualización de resultados electorales mediante gráficos dinámicos  
-- Comparación de candidatos y sus propuestas de gobierno  
-- Clasificación de propuestas por sectores (educación, salud, economía, etc.)  
-- Análisis de impacto y viabilidad de propuestas  
+- Análisis de ingresos y patrimonio declarados ante la ONPE  
+- Clasificación de candidatos por nivel de riesgo legal y penal  
+- Evaluación de presencia en TikTok y cobertura de campaña  
 - Generación de reportes visuales  
 - Interacción mediante filtros y segmentación de datos  
 
@@ -320,7 +320,7 @@ El sistema Dashboard de análisis electoral contará con las siguientes caracter
 
 - Visualización de resultados electorales mediante gráficos interactivos  
 - Comparación de candidatos presidenciales  
-- Análisis de propuestas de gobierno por sectores (educación, salud, economía, etc.)  
+- Análisis de perfil socioeconómico y legal por candidato  
 - Uso de filtros y segmentación de datos para personalizar el análisis  
 - Generación de reportes visuales  
 - Interfaz intuitiva y fácil de usar  

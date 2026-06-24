@@ -1,4 +1,4 @@
-<center>
+﻿<center>
 
 [comment]: <img src="./media/media/image1.png" style="width:1.088in;height:1.46256in" alt="escudo.png" />
 
@@ -34,7 +34,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 
@@ -47,11 +47,11 @@ Integrantes:
 
 
 
-**Sistema *{Nombre del Sistema}***
+**Sistema *Dashboard de análisis electoral de candidatos presidenciales – Perú 2026***
 
 **Documento de SRS**
 
-**Versión *{1.0}***
+**Versión *1.0***
 **
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
@@ -59,7 +59,7 @@ Integrantes:
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
@@ -70,9 +70,9 @@ Integrantes:
 
 ## INTRODUCCIÓN
 
-El presente documento describe de manera detallada los requerimientos del sistema denominado Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2021. El objetivo del sistema es facilitar el análisis de información electoral mediante herramientas de inteligencia de negocios, específicamente a través de dashboards interactivos desarrollados en Power BI.
+El presente documento describe de manera detallada los requerimientos del sistema denominado Dashboard de análisis electoral y análisis del perfil de candidatos presidenciales - Perú 2026. El objetivo del sistema es facilitar el análisis del perfil socioeconómico, legal y de campaña de los candidatos mediante Power BI conectado a Azure SQL.
 Este documento establece los requerimientos funcionales y no funcionales, así como los modelos de análisis y diseño del sistema, con el fin de proporcionar una base sólida para su desarrollo e implementación.
-El sistema permitirá transformar datos electorales en información útil para la toma de decisiones, contribuyendo a mejorar la comprensión de los procesos electo
+El sistema permitirá transformar datos electorales en información útil para la toma de decisiones, contribuyendo a mejorar la comprensión del perfil de los candidatos presidenciales y fortaleciendo la transparencia democrática.
 
 
 ---
@@ -82,7 +82,7 @@ El sistema permitirá transformar datos electorales en información útil para l
 ## I. GENERALIDADES DE LA EMPRESA
 
 ### 1. Nombre de la Empresa
-Universidad Privada de Tacna - Proyecto Académico de Inteligencia de Negociosrales y la evaluación de propuestas de gobierno.
+Universidad Privada de Tacna - Proyecto Académico de Inteligencia de Negocios
 
 ### 2. Visión
 Ser referentes en la formación de ingenieros de sistemas a nivel nacional, destacando por el desarrollo de soluciones tecnológicas innovadoras basadas en inteligencia de negocios que contribuyan al análisis de datos y la toma de decisiones.
@@ -119,7 +119,7 @@ Por ello, se propone el desarrollo de un dashboard de análisis electoral que pe
 ### 2.2. Objetivos de Negocios
 #### 2.2.1. Objetivo general
 
-Desarrollar un sistema de dashboard interactivo que permita analizar información electoral y evaluar planes de gobierno, facilitando la visualización de datos, la comparación de candidatos y la toma de decisiones informadas.
+Desarrollar un sistema de dashboard interactivo que permita analizar información electoral y analizar el perfil socioeconómico, legal y de campaña de candidatos presidenciales, facilitando la visualización de datos, la comparación de candidatos y la toma de decisiones informadas.
 #### 2.2.2. Objetivos específicos
 
 - Centralizar la información electoral proveniente de diversas fuentes en un solo sistema.
@@ -139,7 +139,7 @@ Diseñar un dashboard interactivo utilizando herramientas de inteligencia de neg
 
 ### 2.4. Alcance del Proyecto
 
-El proyecto contempla el desarrollo de un dashboard interactivo basado en datos de las Elecciones Generales del Perú 2021.
+El proyecto contempla el desarrollo de un dashboard interactivo basado en datos de candidatos presidenciales de las Elecciones Generales del Perú 2026 almacenados en Azure SQL.
 El sistema incluirá:
 - Visualización de resultados electorales
 - Comparación de candidatos presidenciales
@@ -152,7 +152,7 @@ El sistema será implementado en un entorno web y estará orientado a fines acad
 
 ### 2.5. Viabilidad del Sistema
 
-El desarrollo del sistema de Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2021 es viable desde diferentes perspectivas, las cuales han sido analizadas en el estudio de factibilidad.
+El desarrollo del sistema de Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2026 es viable desde diferentes perspectivas, las cuales han sido analizadas en el estudio de factibilidad.
 
 #### 2.5.1.	Viabilidad Técnica
 El sistema es técnicamente viable debido a que se basa en el uso de herramientas ampliamente utilizadas en el análisis y visualización de datos, como Power BI, Microsoft Excel y Python. Estas tecnologías permiten procesar grandes volúmenes de información y generar dashboards interactivos de manera eficiente.
@@ -177,7 +177,7 @@ El sistema es operativamente viable, ya que los usuarios objetivo (estudiantes, 
 El dashboard será diseñado con una interfaz intuitiva, permitiendo la interacción mediante gráficos, filtros y reportes dinámicos. Además, el sistema puede mantenerse y actualizarse fácilmente sin requerir recursos adicionales significativos, lo que garantiza su funcionamiento continuo.
 
 #### 2.5.4.	Viabilidad Legal
-El proyecto es legalmente viable, ya que se basa en el uso de información pública proveniente de fuentes oficiales, como datos electorales y planes de gobierno.
+El proyecto es legalmente viable, ya que se basa en el uso de información pública proveniente de fuentes oficiales, como datos oficiales de candidatos (ONPE, JNE): ingresos, patrimonio y antecedentes legales.
 Asimismo, cumple con la normativa vigente en el Perú, especialmente con la Ley N° 29733 – Ley de Protección de Datos Personales, que regula el uso adecuado de la información.
 
 El sistema no recopila ni almacena datos sensibles de los usuarios, ya que su finalidad es la visualización y análisis de datos públicos. Además, se respetan las licencias de las herramientas utilizadas, como Power BI, Python y otras tecnologías de uso académico.
@@ -199,7 +199,7 @@ Además, al utilizar infraestructura tecnológica existente y servicios en la nu
 
 Durante el levantamiento de información se identificaron las siguientes necesidades:
 - Acceso a información electoral organizada y confiable
-- Dificultad para comparar planes de gobierno
+- Dificultad para comparar el perfil socioeconómico y legal de los candidatos
 - Necesidad de visualizaciones claras y comprensibles
 - Uso de herramientas interactivas para análisis de datos
 - Acceso desde cualquier dispositivo con conexión a internet
@@ -316,7 +316,7 @@ El sistema automatiza el análisis mediante dashboards.
 
 ## CONCLUSIONES
 
-El desarrollo del sistema Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2021 permite centralizar información electoral y política en una plataforma visual e interactiva, facilitando el análisis de resultados, la comparación de candidatos y la evaluación de propuestas de gobierno.
+El desarrollo del sistema Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2026 permite centralizar el perfil de los candidatos presidenciales en una plataforma visual e interactiva, facilitando el análisis de resultados, la comparación de candidatos y el análisis socioeconómico, legal y de campaña de cada candidato.
 El sistema propuesto responde a la problemática identificada, ya que reduce la dispersión de información y mejora la comprensión de los datos mediante gráficos, filtros e indicadores dinámicos. Asimismo, permite que estudiantes, ciudadanos y analistas puedan acceder a información organizada para realizar análisis más claros y fundamentados.
 A través de la especificación de requerimientos, casos de uso, análisis de objetos y diagramas UML, se logró definir la estructura funcional y lógica del sistema, proporcionando una base sólida para su posterior implementación en herramientas de inteligencia de negocios como Power BI.
 Finalmente, el proyecto demuestra viabilidad técnica, operativa, económica, legal, social y ambiental, debido al uso de herramientas accesibles, datos públicos y una propuesta orientada al fortalecimiento de la transparencia informativa y la toma de decisiones informadas.
@@ -326,8 +326,8 @@ Finalmente, el proyecto demuestra viabilidad técnica, operativa, económica, le
 
 ## RECOMENDACIONES
 
-Se recomienda continuar con la implementación del dashboard priorizando las funcionalidades principales, como la visualización de resultados electorales, la comparación de candidatos y la consulta de planes de gobierno.
-También se recomienda validar la información utilizada con fuentes oficiales, como datos electorales publicados por organismos competentes y documentos oficiales de planes de gobierno, con el fin de garantizar la confiabilidad del análisis.
+Se recomienda continuar con la implementación del dashboard priorizando las funcionalidades principales, como la visualización de resultados electorales, la comparación de candidatos y el análisis de riesgo legal y comparación de ingresos y patrimonio.
+También se recomienda validar la información utilizada con fuentes oficiales, como datos electorales publicados por organismos competentes y declaraciones juradas oficiales de la ONPE y el JNE, con el fin de garantizar la confiabilidad del análisis.
 Asimismo, se sugiere realizar pruebas con usuarios finales para evaluar la facilidad de uso del dashboard, la claridad de las visualizaciones y la utilidad de los filtros e indicadores implementados.
 Finalmente, se recomienda considerar futuras mejoras, como la incorporación de nuevos procesos electorales, mayor detalle por región, nuevos indicadores de análisis y opciones adicionales de exportación de reportes visuales.
 

@@ -1,0 +1,117 @@
+@startuml
+skinparam backgroundColor #ffffff
+skinparam linetype ortho
+skinparam entity {
+  BackgroundColor #f0f0f0
+  BorderColor #000000
+  FontColor #000000
+  FontSize 12
+}
+skinparam shadowing false
+
+left to right direction
+
+title Diagrama de Base de Datos - Elecciones2026DW
+
+entity "Partido" as PARTIDO {
+  * IdPartido : INT <<PK>>
+  --
+  NombrePartido : VARCHAR(100)
+  Siglas : VARCHAR(20)
+  Ideologia : VARCHAR(100)
+}
+
+entity "Candidato" as CANDIDATO {
+  * IdCandidato : INT <<PK>>
+  --
+  NombreCompleto : VARCHAR(150)
+  Sexo : VARCHAR(20)
+  Edad : INT
+  FechaNacimiento : DATE
+  LugarNacimiento : VARCHAR(100)
+  NivelEducativo : VARCHAR(100)
+  IdPartido : INT <<FK>>
+}
+
+entity "Ingresos" as INGRESOS {
+  * IdIngreso : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  Total : DECIMAL(18,2)
+  Periodo : VARCHAR(20)
+}
+
+entity "Bien" as BIEN {
+  * IdBien : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  TipoBien : VARCHAR(50)
+  Descripcion : VARCHAR(255)
+  ValorAutovaluo : DECIMAL(18,2)
+}
+
+entity "ClasificacionLegalPenal" as LEGAL {
+  * IdClasificacion : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  NivelPrincipal : INT
+  DescripcionPrincipal : VARCHAR(255)
+}
+
+entity "RelacionSentencias" as SENTENCIAS {
+  * IdSentencia : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  Descripcion : VARCHAR(500)
+  Año : INT
+  TipoDelito : VARCHAR(100)
+}
+
+entity "CandidatoRedSocial" as TIKTOK {
+  * IdRed : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  Tiene : BIT
+  Seguidores : INT
+  Likes : INT
+  CantidadVideos : INT
+}
+
+entity "VisitaCampaña" as VISITA {
+  * IdVisita : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  NombreLugar : VARCHAR(150)
+  TipoLugar : VARCHAR(50)
+  Fecha : DATE
+}
+
+entity "Posgrado" as POSGRADO {
+  * IdPosgrado : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  Institucion : VARCHAR(150)
+  Titulo : VARCHAR(150)
+  Concluido : BIT
+}
+
+entity "HistorialTikTok" as HISTORIAL {
+  * IdHistorial : INT <<PK>>
+  --
+  IdCandidato : INT <<FK>>
+  Año : INT
+  Mes : INT
+  Seguidores : INT
+  Likes : INT
+}
+
+PARTIDO ||--o{ CANDIDATO : " "
+CANDIDATO ||--o{ INGRESOS : " "
+CANDIDATO ||--o{ BIEN : " "
+CANDIDATO ||--o| LEGAL : " "
+CANDIDATO ||--o{ SENTENCIAS : " "
+CANDIDATO ||--o| TIKTOK : " "
+CANDIDATO ||--o{ VISITA : " "
+CANDIDATO ||--o{ POSGRADO : " "
+CANDIDATO ||--o{ HISTORIAL : " "
+@enduml

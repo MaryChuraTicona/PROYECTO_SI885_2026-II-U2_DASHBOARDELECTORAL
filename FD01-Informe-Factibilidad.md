@@ -10,7 +10,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *Dashboard de análisis electoral y evaluación de planes de gobierno - Perú 2026***
+**Proyecto *Dashboard de análisis electoral de candidatos presidenciales - Perú 2026***
 
 Curso: *Inteligencia de Negocios*
 
@@ -31,16 +31,16 @@ Integrantes:
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2021*
+Sistema *Dashboard de análisis electoral de candidatos presidenciales – Perú 2026*
 
 Informe de Factibilidad
 
-Versión *{1.0}*
+Versión *1.0*
 
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
 |Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
+|1\.0|MCT, DCA|PCQ|PCQ|13/04/2026|Versión Original|
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -78,7 +78,7 @@ Versión *{1.0}*
 1. <span id="_Toc52661346" class="anchor"></span>**Descripción del Proyecto**
 
 ### 1.1 Nombre del proyecto
-Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2026
+Dashboard de análisis electoral de candidatos presidenciales – Perú 2026
 
 ### 1.2 Duración del proyecto
 
@@ -86,48 +86,50 @@ Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2
 - Fecha de finalización: 13 de julio del 2026  
 - Duración estimada: 3 meses  
 
-### 1.3 Descripción 
+### 1.3 Descripción
 
-    1.3. Descripción
+El presente proyecto consiste en el desarrollo de un dashboard interactivo para el análisis del perfil de los candidatos presidenciales en el contexto de las Elecciones Generales del Perú 2026. La solución integra información relevante de cada candidato, como datos personales, perfil socioeconómico, patrimonio declarado, antecedentes legales y presencia en redes sociales.
 
-        El presente proyecto consiste en el desarrollo de un dashboard interactivo para el análisis de candidatos presidenciales y la evaluación de sus planes de gobierno en el contexto de las Elecciones Generales del Perú 2026. La solución integra información relevante de cada candidato, como datos personales, perfil socioeconómico y características generales, junto con el análisis estructurado de sus propuestas políticas.
-        El sistema permite organizar y visualizar la información de manera dinámica, facilitando la exploración individual de cada candidato mediante filtros interactivos, así como la comparación de sus planes de gobierno según dimensiones como social, económica, institucional y territorial-ambiental.
-        Asimismo, las propuestas contenidas en los planes de gobierno son clasificadas en temas clave como salud, educación, seguridad, economía y vivienda, permitiendo identificar las prioridades, enfoques y estrategias de cada organización política.
-        El dashboard transforma información compleja y dispersa en una herramienta visual clara, permitiendo analizar tanto el perfil de los candidatos como el contenido de sus propuestas, favoreciendo una comprensión integral del panorama político.
-        El proyecto está orientado a estudiantes, ciudadanos y analistas interesados en el análisis electoral, proporcionando una plataforma que promueve la transparencia, el acceso a la información y la toma de decisiones informadas.
-        En resumen, esta solución tecnológica integra el análisis de datos de candidatos presidenciales con la evaluación comparativa de planes de gobierno, contribuyendo al fortalecimiento de la cultura democrática en el Perú.
+El sistema permite organizar y visualizar la información de manera dinámica, facilitando la exploración individual de cada candidato mediante filtros interactivos, así como la comparación entre candidatos según indicadores clave como ingresos, patrimonio, nivel de riesgo legal y actividad en campaña.
 
+Las visualizaciones incluyen análisis demográfico (edad, género, nivel educativo), perfil económico (ingresos y bienes declarados ante la ONPE), clasificación de riesgo legal y penal, presencia en TikTok y cobertura de visitas de campaña por región.
 
+El dashboard transforma información dispersa en múltiples fuentes oficiales en una herramienta visual clara, permitiendo analizar el perfil integral de cada candidato y favoreciendo una comprensión objetiva del panorama electoral.
 
-    1.4. Objetivos
+El proyecto está orientado a estudiantes, ciudadanos y analistas interesados en el análisis electoral, proporcionando una plataforma que promueve la transparencia, el acceso a la información y la toma de decisiones informadas.
 
-        1.4.1 Objetivo general
+### 1.4 Objetivos
 
-        - Desarrollar un dashboard interactivo que permita analizar el perfil de los candidatos presidenciales y evaluar comparativamente sus planes de gobierno en el Perú para las Elecciones Generales 2026, mediante visualizaciones dinámicas e indicadores que faciliten la interpretación de la información.
-        
-        1.4.2 Objetivos Específicos
-            - Integrar información relevante de los candidatos presidenciales, incluyendo datos personales, características socioeconómicas y trayectoria.
-            - Diseñar visualizaciones que permitan analizar individualmente a cada candidato mediante filtros dinámicos.- - Recopilar y estructurar los planes de gobierno de los partidos políticos participantes.
-            - Clasificar las propuestas según dimensiones (social, económica, institucional y territorial-ambiental) y temas específicos como salud, educación, seguridad y economía.
-            - Implementar herramientas visuales que permitan comparar las propuestas entre candidatos y partidos políticos.
-            - Analizar la relación entre el perfil del candidato y las prioridades de su plan de gobierno.
-            - Publicar el dashboard en un entorno accesible que permita su visualización e interacción.
+#### 1.4.1 Objetivo general
+
+- Desarrollar un dashboard interactivo que permita analizar el perfil integral de los candidatos presidenciales del Perú para las Elecciones Generales 2026, mediante visualizaciones dinámicas e indicadores que faciliten la interpretación de su información socioeconómica, legal y de campaña.
+
+#### 1.4.2 Objetivos Específicos
+
+- Integrar información de los candidatos presidenciales incluyendo datos personales, perfil socioeconómico y trayectoria.
+- Diseñar visualizaciones que permitan analizar individualmente a cada candidato mediante filtros dinámicos.
+- Analizar los ingresos y patrimonio declarados por cada candidato ante la ONPE.
+- Clasificar a los candidatos según su nivel de riesgo legal y penal mediante indicadores visuales.
+- Evaluar la presencia digital de los candidatos en la red social TikTok.
+- Analizar la cobertura geográfica de las visitas de campaña por candidato.
+- Implementar herramientas de comparación entre candidatos según indicadores clave.
+- Publicar el dashboard en un entorno accesible que permita su visualización e interacción.
 
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 2. <span id="_Toc52661347" class="anchor"></span>**Riesgos**
- - Dificultad para encontrar información completa y ordenada sobre los planes de gobierno.
-- Posible inconsistencia entre las fuentes de información electoral consultadas.
-- Retrasos en la limpieza y estructuración de los datos.
-- Errores en la clasificación de propuestas por sector.
-- Limitaciones técnicas en el diseño del dashboard.
-- Falta de experiencia del equipo en herramientas de visualización de datos.
-- Riesgo de interpretar de forma subjetiva las propuestas políticas.
-- Dificultad para estimar costos reales de algunas propuestas de gobierno.
-- Posibles problemas al publicar el dashboard en un entorno web o repositorio público.
-*
+
+- Dificultad para encontrar información completa y ordenada sobre los candidatos presidenciales en fuentes oficiales.
+- Posible inconsistencia entre las fuentes de información electoral consultadas (ONPE, JNE, medios digitales).
+- Retrasos en la limpieza y estructuración de los datos en la base de datos Azure SQL.
+- Errores en la clasificación del nivel de riesgo legal y penal de los candidatos.
+- Limitaciones técnicas en el diseño e implementación del dashboard en Power BI.
+- Falta de experiencia del equipo en herramientas de visualización de datos e inteligencia de negocios.
+- Datos incompletos en tablas como historial de TikTok o visitas de campaña por candidato.
+- Dificultad para establecer relaciones correctas entre tablas en el modelo de datos.
+- Posibles problemas al publicar el dashboard en Power BI Service o repositorio público.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -135,17 +137,17 @@ Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2
 
     3.1. Planteamiento del problema
 
-            En el Perú, la información relacionada con los candidatos presidenciales y sus planes de gobierno se encuentra distribuida en múltiples fuentes, como documentos oficiales, portales institucionales y medios digitales. Esta dispersión dificulta el acceso, análisis y comprensión de las propuestas políticas por parte de los ciudadanos.
+            En el Perú, la información relacionada con los candidatos presidenciales se encuentra distribuida en múltiples fuentes, como declaraciones juradas de la ONPE, portales institucionales y registros públicos. Esta dispersión dificulta el acceso, análisis y comprensión del perfil real de cada candidato por parte de los ciudadanos.
 
-            En el contexto de las Elecciones Generales del Perú 2026, los planes de gobierno de los partidos políticos contienen una gran cantidad de información estructurada en problemas, objetivos, indicadores y metas; sin embargo, estos documentos suelen ser extensos, técnicos y poco estandarizados, lo que dificulta su comparación directa entre candidatos.
+            En el contexto de las Elecciones Generales del Perú 2026, los datos sobre ingresos, patrimonio, antecedentes legales y actividad de campaña de los candidatos están disponibles de forma fragmentada y en formatos poco accesibles, lo que impide una evaluación comparativa clara entre los postulantes.
 
-            Asimismo, no existe una herramienta integrada que permita visualizar de manera conjunta el perfil de los candidatos presidenciales junto con el contenido de sus propuestas, lo que limita el análisis de sus prioridades, enfoques y estrategias de gobierno.
+            Asimismo, no existe una herramienta integrada que permita visualizar de manera conjunta el perfil socioeconómico, legal y digital de los candidatos presidenciales, lo que limita la capacidad del ciudadano de evaluar objetivamente a quienes aspiran al cargo.
 
-            Esta situación genera una brecha en la capacidad de los ciudadanos, estudiantes y analistas para interpretar de forma clara la información política disponible, dificultando la toma de decisiones informadas.
+            Esta situación genera una brecha en la capacidad de los ciudadanos, estudiantes y analistas para interpretar de forma clara la información disponible sobre los candidatos, dificultando la toma de decisiones informadas.
 
-            En este contexto, surge la necesidad de desarrollar un dashboard interactivo que permita integrar, organizar y visualizar la información de los candidatos presidenciales y sus planes de gobierno, facilitando su análisis comparativo mediante herramientas gráficas, filtros dinámicos e indicadores visuales.
+            En este contexto, surge la necesidad de desarrollar un dashboard interactivo que permita integrar, organizar y visualizar el perfil de los candidatos presidenciales, facilitando su análisis comparativo mediante herramientas gráficas, filtros dinámicos e indicadores visuales basados en datos oficiales.
 
-            De esta manera, el proyecto busca transformar información política compleja y dispersa en una plataforma accesible, clara y útil, contribuyendo a la transparencia informativa y al fortalecimiento de la cultura democrática en el Perú.
+            De esta manera, el proyecto busca transformar información electoral compleja y dispersa en una plataforma accesible, clara y útil, contribuyendo a la transparencia informativa y al fortalecimiento de la cultura democrática en el Perú.
 
 
 
@@ -343,7 +345,7 @@ Dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2
 
 6. <span id="_Toc52661357" class="anchor"></span>**Conclusiones**
 
-En conclusión, el proyecto de dashboard de análisis electoral y evaluación de planes de gobierno – Perú 2021 es viable desde el punto de vista técnico, ya que se cuenta con herramientas accesibles y ampliamente utilizadas como Power BI, Excel y tecnologías de desarrollo que permiten implementar una solución eficiente, escalable y de fácil acceso para los usuarios.
+En conclusión, el proyecto de dashboard de análisis electoral de candidatos presidenciales – Perú 2026 es viable desde el punto de vista técnico, ya que se cuenta con herramientas accesibles y ampliamente utilizadas como Power BI, Excel y tecnologías de desarrollo que permiten implementar una solución eficiente, escalable y de fácil acceso para los usuarios.
 
 Respecto a la factibilidad económica, el proyecto presenta resultados favorables, con un Valor Actual Neto (VAN) de S/ 2,242.94 y una relación beneficio/costo (B/C) de 1.33, lo que indica que la inversión es recuperable y que los beneficios generados superan los costos de implementación y operación. Si bien la Tasa Interna de Retorno (TIR) es de 4.6%, menor a la tasa de descuento del 8%, el proyecto sigue siendo viable en el contexto académico, ya que su objetivo principal no es la generación de rentabilidad financiera, sino el desarrollo de una solución tecnológica funcional y útil.
 En cuanto a la factibilidad operativa, el sistema es viable debido a que los usuarios están familiarizados con el uso de herramientas digitales y dashboards, lo que facilita su implementación, uso y mantenimiento sin requerir procesos complejos de capacitación.
